@@ -19,6 +19,7 @@ public class FinalProgra2 {
     public static void main(String[] args) {
         frmPrincipal menu = new frmPrincipal();
         menu.setVisible(true);
+        menu.setLocationRelativeTo(null);
     }
     
 }
