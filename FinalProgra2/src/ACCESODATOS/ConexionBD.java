@@ -85,6 +85,24 @@ public class ConexionBD {
             
     }
      
+     public void eliminar_telefono(int id){
+    
+        Connection con = conectar();
+        String update = "DELETE FROM `telefonos` WHERE `telefonos`.`idTelefono` = "+id+"";
+        PreparedStatement ps = null;
+        
+        try {
+            ps = con.prepareStatement(update);
+            
+            ps.executeUpdate();
+            JOptionPane.showMessageDialog(null, "Registro eliminado con exito!");
+            
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, "Error al eliminar el registro Marca"+e);
+        }
+            
+    }
+     
     public void eliminar_modelo(String tipo,int id){
     
         Connection con = conectar();

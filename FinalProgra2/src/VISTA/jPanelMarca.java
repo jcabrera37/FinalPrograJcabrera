@@ -113,7 +113,12 @@ public class jPanelMarca extends javax.swing.JPanel {
             }
         });
 
-        jButton4.setText("jButton1");
+        jButton4.setText("Cancelar");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/Marcas.jpg"))); // NOI18N
 
@@ -201,6 +206,10 @@ public class jPanelMarca extends javax.swing.JPanel {
         
         
     }//GEN-LAST:event_jbtnEliminarActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton4ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
